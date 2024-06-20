@@ -36,3 +36,29 @@ SJRF is a **preemptive** version of the SJF algorithm. In this method, the proce
 ![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/48ada044-217a-46e0-a785-112108a9800f)
 ![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/69208eea-067d-427b-a26d-c865309f329d)
 ![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/d625396b-a338-4a3c-b5f6-1eda043582f9)
+
+# Key Takeaways from This Project
+
+1. **Understanding Scheduling Algorithms:**
+   - Gained knowledge of various CPU scheduling algorithms, including FCFS, SJF, RR, and SJRF.
+   - Differentiated between preemptive and non-preemptive methods.
+
+2. **Practical Implementation:**
+   - Developed skills in implementing algorithms in C++ using data structures like queues and maps.
+
+3. **Performance Analysis:**
+   - Analyzed and compared metrics such as Turn Around Time and Waiting Time for each algorithm.
+
+4. **Handling Random Data:**
+   - Implemented functionality for generating random process data to simulate various scenarios.
+
+5. **Code Organization:**
+   - Emphasized clean, modular code for better readability and maintenance.
+
+6. **Simulation of Real-World Scenarios:**
+   - Simulated real-world process scheduling, providing insights into CPU resource management in operating systems.
+  
+# References
+  - https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/
+  - https://www.youtube.com/playlist?list=PLBlnK6fEyqRitWSE_AyyySWfhRgyA-rHk
+
