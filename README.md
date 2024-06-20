@@ -30,33 +30,58 @@ The Round Robin scheduling algorithm assigns each process a fixed time slice or 
 
 SJRF is a **preemptive** version of the SJF algorithm. In this method, the process with the shortest remaining burst time is selected for execution. If a new process arrives with a shorter burst time than the currently running process, the CPU preempts the current process and switches to the new one. This continuous prioritization of the shortest jobs minimizes the waiting time for shorter processes and is optimal in terms of average waiting time. However, like SJF, it requires precise knowledge of burst times and can be complex to implement due to its preemptive nature.
 
+# Procedure
+1. Open the index.html file in your default web browser.
+2. Select the number of processes.
+3. Select the scheduling algorithm from the drop down list.
+4. In case of Round Robin algorithm select thr time quantum.
+5. Click on generate process inputs.
+6. Either manually give values of arrival and burst time, or generate them randomly.
+7. Run Scheduling Algorithm.
+
 ## Working Screenshots
-![Screenshot 2024-06-20 113951](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/e4bac760-7c76-4042-8bba-be8601a64e77)
-![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/1bfdce69-1217-42df-a26a-90f80d4402d5)
-![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/48ada044-217a-46e0-a785-112108a9800f)
-![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/69208eea-067d-427b-a26d-c865309f329d)
-![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/d625396b-a338-4a3c-b5f6-1eda043582f9)
+![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/24233dd9-3b1a-45dd-8b69-d193739438f5)
+![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/aceeea44-c686-4b81-99f2-230bc0e4676d)
 
-# Key Takeaways from This Project
+# Key Takeaways
 
-1. **Understanding Scheduling Algorithms:**
-   - Gained knowledge of various CPU scheduling algorithms, including FCFS, SJF, RR, and SJRF.
-   - Differentiated between preemptive and non-preemptive methods.
+### 1. Algorithm Understanding
+Gain practical knowledge of CPU scheduling algorithms:
+- **FCFS** (First Come First Served)
+- **SJF** (Shortest Job First)
+- **RR** (Round Robin)
+- **SJRF** (Shortest Job Remaining First)
 
-2. **Practical Implementation:**
-   - Developed skills in implementing algorithms in C++ using data structures like queues and maps.
+Understand how each algorithm impacts system performance and scheduling efficiency.
 
-3. **Performance Analysis:**
-   - Analyzed and compared metrics such as Turn Around Time and Waiting Time for each algorithm.
+### 2. Data Structures
+Utilize arrays and objects to manage processes:
+- Store attributes such as arrival time, burst time, completion time, turnaround time, and waiting time.
 
-4. **Handling Random Data:**
-   - Implemented functionality for generating random process data to simulate various scenarios.
+### 3. JavaScript Proficiency
+Implement frontend (HTML/CSS) and backend (JavaScript) for:
+- User interface (UI) interactions and updates.
+- Algorithmic logic for CPU scheduling simulations.
 
-5. **Code Organization:**
-   - Emphasized clean, modular code for better readability and maintenance.
+### 4. Visualization Skills
+Create Gantt charts dynamically using:
+- CSS for styling and layout.
+- JavaScript for dynamic content generation and visualization.
 
-6. **Simulation of Real-World Scenarios:**
-   - Simulated real-world process scheduling, providing insights into CPU resource management in operating systems.
+### 5. Project Management
+Practice effective project management skills:
+- Task organization, iteration planning, and implementation.
+- Debugging, testing, and refining solutions.
+
+### 6. Performance Analysis
+Compare metrics such as:
+- Turnaround time and waiting time across different scheduling algorithms.
+- Understand the trade-offs and performance characteristics of each algorithm.
+
+### 7. Problem-Solving
+Handle edge cases and adapt solutions:
+- Manage varying inputs and algorithm parameters effectively.
+- Debug and optimize code for efficiency and correctness.
   
 # References
   - https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/
