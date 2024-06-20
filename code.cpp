@@ -15,19 +15,43 @@ class Process {
     int turnAroundTime;
     int waitingTime;
 public:
-    int getId() const { return id; }
-    int getBurstTime() const { return burstTime; }
-    int getArrivalTime() const { return arrivalTime; }
-    int getCompletionTime() const { return completionTime; }
-    int getTurnAroundTime() const { return turnAroundTime; }
-    int getWaitingTime() const { return waitingTime; }
+    int getId() const { 
+        return id; 
+    }
+    int getBurstTime() const { 
+        return burstTime; 
+    }
+    int getArrivalTime() const { 
+        return arrivalTime; 
+    }
+    int getCompletionTime() const { 
+        return completionTime; 
+    }
+    int getTurnAroundTime() const { 
+        return turnAroundTime;
+    }
+    int getWaitingTime() const { 
+        return waitingTime; 
+    }
     
-    void setId(int id) { this->id = id; }
-    void setBurstTime(int burstTime) { this->burstTime = burstTime; }
-    void setArrivalTime(int arrivalTime) { this->arrivalTime = arrivalTime; }
-    void setCompletionTime(int completionTime) { this->completionTime = completionTime; }
-    void setTurnAroundTime(int turnAroundTime) { this->turnAroundTime = turnAroundTime; }
-    void setWaitingTime(int waitingTime) { this->waitingTime = waitingTime; }
+    void setId(int id) { 
+        this->id = id; 
+    }
+    void setBurstTime(int burstTime) { 
+        this->burstTime = burstTime; 
+    }
+    void setArrivalTime(int arrivalTime) { 
+        this->arrivalTime = arrivalTime; 
+    }
+    void setCompletionTime(int completionTime) { 
+        this->completionTime = completionTime; 
+    }
+    void setTurnAroundTime(int turnAroundTime) { 
+        this->turnAroundTime = turnAroundTime; 
+    }
+    void setWaitingTime(int waitingTime) { 
+        this->waitingTime = waitingTime; 
+    }
 };
 
 bool compareByArrival(const Process &p, const Process &q) {
