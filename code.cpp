@@ -7,7 +7,6 @@
 #include <vector>
 using namespace std;
 
-
 class Process {
     int id;
     int burstTime;
