@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Scheduling Algorithms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #555;
+        }
+        div, label, input, select, button {
+            display: block;
+            margin: 10px auto;
+            max-width: 600px;
+            text-align: left;
+        }
+        input, select {
+            padding: 5px;
+            width: calc(100% - 20px);
+        }
+        button {
+            background-color: #5a67d8;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4c51bf;
+        }
+        #processInputs > div {
+            display: flex;
+            justify-content: space-between;
+        }
+        #processInputs input {
+            width: 45%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #5a67d8;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        #averageTimes {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #555;
+        }
+        #ganttChartContainer {
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+        .gantt-bar {
+            display: inline-block;
+            padding: 5px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CPU Scheduling Algorithms</h1>
+    <div>
+        <label for="numProcesses">Number of Processes:</label>
+        <input type="number" id="numProcesses" min="1" value="1">
+    </div>
+    <div>
+        <label for="schedulingAlgorithm">Scheduling Algorithm:</label>
+        <select id="schedulingAlgorithm">
+            <option value="fcfs">First Come First Served (FCFS)</option>
+            <option value="sjf">Shortest Job First (SJF)</option>
+            <option value="rr">Round Robin (RR)</option>
+            <option value="sjrf">Shortest Job Remaining First (SJRF)</option>
+        </select>
+    </div>
+    <div>
+        <label for="timeQuantum" id="timeQuantumLabel" style="display: none;">Time Quantum (for RR):</label>
+        <input type="number" id="timeQuantum" min="1" value="1" style="display: none;">
+    </div>
+    <button onclick="generateProcessInputs()">Generate Process Inputs</button>
+    <button onclick="generateRandomValues()">Generate Random Values</button>
+    <div id="processInputs"></div>
+    <button onclick="runSchedulingAlgorithm()">Run Scheduling Algorithm</button>
+    <h2>Results</h2>
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Process ID</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+                <th>Completion Time</th>
+                <th>Turn Around Time</th>
+                <th>Waiting Time</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3 id="averageTimes"></h3>
+    <h2>Gantt Chart</h2>
+    <div id="ganttChartContainer"></div>
+
+    <script src="scheduling.js"></script>
+</body>
+</html>
