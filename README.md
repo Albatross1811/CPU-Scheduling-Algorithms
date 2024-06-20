@@ -29,3 +29,10 @@ The Round Robin scheduling algorithm assigns each process a fixed time slice or 
 ## Shortest Job Remaining First (SJRF)
 
 SJRF is a **preemptive** version of the SJF algorithm. In this method, the process with the shortest remaining burst time is selected for execution. If a new process arrives with a shorter burst time than the currently running process, the CPU preempts the current process and switches to the new one. This continuous prioritization of the shortest jobs minimizes the waiting time for shorter processes and is optimal in terms of average waiting time. However, like SJF, it requires precise knowledge of burst times and can be complex to implement due to its preemptive nature.
+
+## Working Screenshots
+![Screenshot 2024-06-20 113951](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/e4bac760-7c76-4042-8bba-be8601a64e77)
+![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/1bfdce69-1217-42df-a26a-90f80d4402d5)
+![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/48ada044-217a-46e0-a785-112108a9800f)
+![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/69208eea-067d-427b-a26d-c865309f329d)
+![image](https://github.com/Albatross1811/CPU-Scheduling-Algorithms/assets/173333540/d625396b-a338-4a3c-b5f6-1eda043582f9)
